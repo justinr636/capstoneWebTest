@@ -1479,7 +1479,7 @@
                     var html = '<option value="0">Select One</option>'
                     if (los) html += '<option value="los">Length of Stay</option>';
                     if (weight) html += '<option value="weight">Body Weight</option>';
-                    if (caloric) html += '<option value="caloric">Maximum Caloric Density</option>';
+                    if (maxcal) html += '<option value="caloric">Maximum Caloric Density</option>';
                     $("#simpleYDataDrop").html(html);
 	                $("#simpleDateXData").show();
                     $("#simpleXDataDrop").show();
@@ -1659,7 +1659,7 @@
                              opts.titles, opts.width, opts.height, opts.selector);
                 } else if (chartType == 2) {    // Draw Box Plot
                 } else if (chartType == 3) {    // Draw Funnel Plot
-                    drawFunnelPlot(customizeCSVData(opts.options, opts.Y_COL, opts.X_COL, opts.HID_COL, opts.START_DATE, opts.END_DATE, global_complete_col),
+                    drawFunnelPlot(customizeCSVData(opts.options, opts.Y_COL, opts.X_COL, opts.HID_COL, opts.START_DATE, opts.END_DATE, global_complete),
                                opts.titles, opts.width, opts.height, opts.selector);
                 } else if (chartType == 4) {    // Draw Bar Chart
                 }
