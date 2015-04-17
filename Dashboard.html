@@ -1648,7 +1648,7 @@
                     var interval = $chartContainer.find("input.interval-radio:checked").val();
                     opts.options["interval"] = interval;
                     
-                    drawRunChart(customizeCSVData(opts.options, opts.Y_COL, opts.X_COL, opts.HID_COL, opts.START_DATE, opts.END_DATE, global_complete_col),
+                    drawRunChart(customizeCSVData(opts.options, opts.Y_COL, opts.X_COL, opts.HID_COL, opts.START_DATE, opts.END_DATE, global_complete),
                              opts.titles, opts.width, opts.height, opts.selector);
                 } else if (chartType == 2) {    // Draw Box Plot
                 } else if (chartType == 3) {    // Draw Funnel Plot
