@@ -103,6 +103,7 @@
                     <ul id="help-nav" class="nav nav-tabs nav-justified">
                         <li class="active"><a href="#">Getting Started</a></li>
                         <li><a href="#">Charts and Graphs</a></li>
+                        <li><a href="#">Customize Page</a></li>
                         <li><a href="#">FAQs / Troubleshooting</a></li>
                     </ul>
                 </div>
@@ -280,6 +281,76 @@
                         </div>
                         <div class="col-md-6">
                             <img src="./img/help_charts_date.png" />
+                        </div>
+                    </div>
+                </div>
+                <div id="help-customize-tab">
+                    <div class="row">
+                        <br />
+                        <div class="col-md-12">
+                            <div class="well well-sm">
+                                <a onclick="$(document).scrollTop($('#h4-chart-types').offset().top - 75); return false;" href="#">Chart Types</a> <br />
+                                <a onclick="$(document).scrollTop($('#h4-axes').offset().top - 75); return false;" href="#">X- and Y-Axis Variables</a> <br />
+                                <a onclick="$(document).scrollTop($('#h4-chart-labels').offset().top -75); return false;" href="#">Chart Labels</a>
+                                <a onclick="$(document).scrollTop($('#h4-chart-labels').offset().top -75); return false;" href="#">Create Charts</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 id="h4-chart-types">Chart Types</h4>
+                            <p>Selecting a chart type from the first drop down will populate the X and Y variable drop downs.</p>
+                            <p>There are three types of charts:</p>
+                            <ul>
+                                <li>Control Charts</li>
+                                <li>Box and Whisker Plots</li>
+                                <li>Funnel Plots</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./img/help_chart_types.png" />
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 id="h4-axes">X- and Y-Axis Variables</h4>
+                            <p>The center drop down selects your Y-Axis variable.</p>
+                            <p>The right-most drop down selects your X-Axis variable.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./img/help_axes.png" />
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 id="h4-chart-labels">Chart Labels</h4>
+                            <p>Fill in the leftmost text box to set the <stront>Chart Title</strong></p>
+                            <p>Fill in the center text box to set the <stront>Y-Axis Label</strong></p>
+                            <p>Fill in the rightmost text box to set the <stront>X-Axis Label</strong></p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./img/help_titles.png" />
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 id="h4-cust-create">Create Charts</h4>
+                            <p>
+                                After selecting a
+                                <strong>Chart Type</strong>,
+                                <strong>Hospital ID</strong>,
+                                <strong>Y Axis Variable</strong>,
+                                <strong>X Axis Variable</strong>, and
+                                <strong>Date Range</strong>,
+                                click 'Submit' to create the chart.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./img/help_cust_create.png" />
                         </div>
                     </div>
                 </div>
@@ -672,7 +743,7 @@
                               <div id="indicatorDiv">
                                   <br />
                                   <h5>Indicator Value:</h5>
-                                  <input id="indicatorText" type="text" />
+                                  <input id="indicatorText" class="form-control" type="text" />
                               </div>
 		                  </div>
 		                  <div class="col-md-3">
@@ -823,6 +894,8 @@
                 } else if (i == 1) {
                     $("#help-charts-tab").show().siblings().hide();
                 } else if (i == 2) {
+                    $("#help-customize-tab").show().siblings().hide();
+                } else if (i == 3) {
                     $("#help-faq-tab").show().siblings().hide();
                 }
             });
