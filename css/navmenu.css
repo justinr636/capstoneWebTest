@@ -22,7 +22,7 @@ table td { border: 1px solid black; }
     padding-top: 60px;
 }
     #home-tab       { background-color: white; border-radius: 5px; padding-left: 30px; }
-    #customize-tab  { background-color: white; border-radius: 5px; padding-left: 30px; }
+    #customize-tab  { background-color: white; border-radius: 5px; padding-left: 75px; }
     #help-tab       { background-color: white; border-radius: 5px; padding-left: 30px; }
 
 h1, h2, h3, h4, h5, h6 {
